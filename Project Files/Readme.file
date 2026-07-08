@@ -1,0 +1,144 @@
+# 💳 Credit Card Approval Prediction System
+
+## 📌 Project Overview
+
+The Credit Card Approval Prediction System is a Machine Learning-based web application that predicts whether a credit card application is likely to be approved or rejected based on the applicant's financial and personal information. The project automates the credit card approval process, reducing manual effort and improving decision-making efficiency. It is developed using Python, Flask, Scikit-Learn, HTML, CSS, and Bootstrap.
+
+## 🎯 Problem Statement
+
+Banks and financial institutions receive thousands of credit card applications every day. Manually reviewing each application is time-consuming and prone to human errors. This project automates the approval process using machine learning algorithms by analyzing applicant details such as income, employment, education, family status, and financial information to predict approval or rejection.
+
+
+## ✨ Features
+
+- User-friendly web interface for entering applicant details.
+- Real-time credit card approval prediction.
+- Dashboard displaying project information and statistics.
+- Machine learning model integrated with a Flask web application.
+- Data preprocessing and feature encoding for improved prediction accuracy.
+- Evaluation of multiple machine learning algorithms such as Logistic Regression, Decision Tree, Random Forest, and XGBoost.
+- Responsive design using Bootstrap.
+- Easy to deploy and extend for future enhancements.
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap 5
+
+### Backend
+- Python
+- Flask
+
+### Machine Learning
+- Scikit-Learn
+- Pandas
+- NumPy
+- Random Forest
+- Logistic Regression
+- Decision Tree
+- XGBoost
+
+### Development Tools
+- Visual Studio Code
+- Jupyter Notebook
+- GitHub
+
+## 📂 Project Structure
+
+credit_card_approval/
+│
+├── notebooks/
+│   ├── Notebook1_EDA.ipynb
+│   ├── Notebook2_Preprocessing.ipynb
+│   ├── Notebook3_Model_Training.ipynb
+│   └── Notebook4_Model_Evaluation.ipynb
+│
+├── templates/
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── predict.html
+│   └── result.html
+│
+├── static/
+│   └── style.css
+│
+├── application_record.csv
+├── credit_record.csv
+├── credit_card_model.pkl
+├── app.py
+├── requirements.txt
+└── README.md
+
+
+## ⚙️ Installation
+
+1. Clone the repository.
+
+git clone <repository-link>
+
+2. Open the project folder.
+
+3. Create a virtual environment.
+
+4. Install required packages.
+
+pip install -r requirements.txt
+
+5. Run the Flask application.
+python app.py
+
+6. Open your browser.
+
+http://127.0.0.1:5000
+
+## 🚀 Usage Instructions
+
+Run the Flask application using the `app.py` file. Open the application in your browser and navigate to the prediction page. Enter the applicant's information such as income, employment details, education, family status, and other required fields. Click the **Predict Credit Card Approval** button. The machine learning model processes the input data and instantly predicts whether the application is **Approved** or **Rejected**. Users can also access the dashboard to view project information and prediction statistics.
+
+## 📊 Machine Learning Models Used
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
+
+The Random Forest model achieved the best performance and was integrated into the Flask web application.
+
+## 📸 Screenshots
+
+- Home Page
+- Dashboard
+- Prediction Form
+- Approved Result
+- Rejected Result
+
+## 🔮 Future Scope
+
+. Improve prediction accuracy using advanced ensemble techniques.
+. Integrate credit score and loan history.
+.Add EMI payment analysis.
+. Deploy the application on IBM Cloud or AWS.
+. Develop a mobile application.
+. Implement user authentication and database integration.
+
+## ✅ Conclusion
+
+The Credit Card Approval Prediction System demonstrates how machine learning can simplify and automate the credit card approval process. By analyzing applicant information and providing instant predictions through a Flask-based web application, the system reduces manual effort and supports faster decision-making. The project successfully combines data preprocessing, machine learning, and web development to create a practical and scalable solution. It also provides a strong foundation for future improvements such as cloud deployment, enhanced prediction accuracy, and additional financial analysis features.
+
+## 👨‍💻 Team Members
+
+**Team Leader**
+- Hari Priya Kopparthy
+
+**Team Members**
+- Shalusha Gonigunta
+- Gonigunta Sailaja
+- H. J. Gnana Prasuna
+
+---
+
+## 📜 License
+
+This project was developed for academic and educational purposes as part of the SmartBridge/SkillWallet internship program.
