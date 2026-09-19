@@ -1,24 +1,30 @@
+
 from flask import Flask, render_template, request
 import joblib
-import numpy as np
+import os
 
 app = Flask(__name__)
 
 # Load trained model
 model = joblib.load("notebooks/credit_card_model.pkl")
 
+
 # Home Page
 @app.route('/')
 def home():
     return render_template("index.html")
+
 
 # Dashboard Page
 @app.route('/dashboard')
 def dashboard():
     return render_template("dashboard.html")
 
+
+# Prediction Page
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
+
     if request.method == 'GET':
         return render_template("predict.html")
 
@@ -57,5 +63,8 @@ def predict():
         return f"Error: {e}"
 
 
+# Run application
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
